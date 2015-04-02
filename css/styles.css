@@ -1,19 +1,167 @@
+
+/***
+*** Site specific styles
+***/
+
+body{
+  background-color:#F7F7F7;
+}
+
+#header{
+  width:100%;
+  height:40px;
+  border-bottom:1px solid #bbb; 
+  color: #fff;
+  box-shadow: 0px 0px 2px #bbb;
+  padding:0;
+  font-size:1.2em;
+  font-weight: 600;
+}
+#header a{
+  color :#eee;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:10px;
+  height:100%;
+  display:block;
+  font-size:0.8em;
+}
+#branding{
+  display:inline-block;
+  background-color: #517693;
+  font-size:1.0em;
+  border-left:1px solid #bbb;
+  box-shadow: 1px 0px 2px #bbb;
+  height:100%;
+  margin:0px;
+}
+#branding a{
+  color :#eee;
+}
+#headernav{
+  float:right;
+  height:100%;
+}
+#headernav div{
+  float:right;
+  box-shadow: -1px 0px 1px #bbb;
+  margin:0px;
+  height:100%;
+}
+#headernav div  a{
+  color :#666;
+}
+#footer{
+  width:100%;
+  height:60px;
+  color: #fff;
+  opacity: 0.75;
+  padding:0;.
+  margin-bottom:0;
+  color: rgb(82,82,82);
+  padding-top:10px;
+  text-align: center;
+  position: fixed;
+  bottom:0;
+  background-color:#F7F7F7;
+  z-index: 1000;
+}
+#subfooter{
+  color: rgb(82,82,82);
+  background-color:#F7F7F7;
+  height:30px;
+  border-top:1px solid #bbb;  
+  box-shadow: 0px 0px 2px #bbb;
+  position: fixed;
+  bottom:0;
+  width:100%;
+  opacity:none;
+  z-index: 1001;
+  padding-top:10px;
+  text-align: center;
+}
+
+#container{
+  width:1000px;
+  margin: 50px auto;
+}
+#container:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/***
+*** skeletonCSS 
+***/
+
+/*** Layout ***/
+
 *{
   font-family: Georgia, Times, 'Times New Roman', serif;
+  color: rgb(82,82,82);
 }
 
 html,body{
   margin:0;
   padding:0;
-  color: rgb(82,82,82);
 }
 
-
-header{
-  background-color: #68838B;
-  color: #fff;
-  padding:10px 20px;
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
+
+.row{
+  margin-bottom:10px;
+}
+
+.col{
+  width:100%;
+  box-sizing: border-box;
+  float:left;
+  margin-left:3%;
+  margin-right:0;
+  border-radius: 3px;
+  padding:8px 12px;
+}
+.col:first-child{
+  margin-left:0;
+}
+.col1{width:9.875%;}
+.col2{width:22.75%;}
+.col3{width:35.625%;}
+.col4{width:48.5%;}
+.col5{width:61.375%;}
+.col6{width:74.25%;}
+.col7{width:87.125%;}
+
+.indent{
+  margin-left:30px;
+}
+.float-left{
+  float:left;
+}
+.float-right{
+  float:right;
+}
+.inline{
+  display:inline-block;
+}
+
+.top{
+  vertical-align:top;
+}
+.left{
+  text-align:left;
+}
+.right{
+  text-align:right;
+}
+
+/*** Text Styles ***/
 
 h1,h2,h3,h4,h5,h6{
   font-style: normal;
@@ -81,35 +229,8 @@ code{
   padding:4px 6px;
   border-radius:4px;
 }
-indent{
-  margin-left:30px;
-}
 
-.float-left{
-  float:left;
-}
-.float-right{
-  float:right;
-}
-
-.clear{
-  clear:both;
-}
-
-.inline{
-  display:inline-block;
-}
-
-.top{
-  vertical-align:top;
-}
-.left{
-  text-align:left;
-}
-.right{
-  text-align:right;
-}
-
+/*** Forms ***/
 
 input,select,textarea{
   font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
@@ -225,6 +346,8 @@ form.block-right input[type=submit]{
   margin-top:10px;
 }
 
+/*** Tables ***/
+
 table{
   border-collapse:collapse;
 }
@@ -239,7 +362,6 @@ table tbody td{
   padding:10px 40px;
   text-align:center;
 }
-
 
 table.vertical thead th + th,
 table.vertical tbody td + td{
@@ -288,6 +410,8 @@ table.selectable tbody tr:hover{
   cursor:pointer;
 }
 
+/*** Boxing ***/
+
 .highlight-box{
   display:block;
   border: 1px solid #ccc;
@@ -300,9 +424,14 @@ table.selectable tbody tr:hover{
   margin-left:-20px;
   margin-right:-20px;
   padding: 10px 20px;
-  background-color: #eee;
   border-bottom:1px solid #ccc;
-  font-weight:600;
+  background-color:#517693;
+  padding-top:10px;
+  padding-bottom:10px;
+  color:#fff;
+  font-size:1.6em;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .box-subtitle{
@@ -339,6 +468,7 @@ table.selectable tbody tr:hover{
   margin-left:-20px;
   margin-right:-20px;
   margin-bottom:20px;
+  margin-top:20px;
   padding: 10px 20px;
   background-color: #eee;
   border-top:1px solid #ccc;
@@ -354,4 +484,4 @@ table.selectable tbody tr:hover{
   padding-top:5px;
   padding-bottom:5px;
   border-left: 5px solid #ccc;
-}
+

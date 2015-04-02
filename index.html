@@ -1,76 +1,74 @@
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <link rel='stylesheet' href='./css/styles.css'>
-    <style>
-      h1{
-        font-size:40px;
-        line-height:40px;
-      }
-      footer{
-        position:absolute;
-        bottom:0px;
-        height:30px;
-        text-align:center;
-      }
-      #container{
-        padding:20px;
-      }
-    </style>
-    <title>Bitpen</title>
-  </head>
-  <body>
-    <header>
-      <h1>Bitpen</h1>
-      <div class='float-right'>
-        <h2>Simple. Productive. Solutions.</h2>
-      </div>
-      <div class='clear'></div>
-    </header>
-    <div id='container'>
-      <h2>Portfolio</h2>
-      <div class='box inline'>
-        <div class='highlight-box-title'>
-          <img src='./images/map.png' />
-          Distance Mapper
-          
-        </div>
-        <p>
-          Distance mapping utility for quickly mapping distances for running,
-          walking or biking.  Built on Google Maps API v.3
-        </p>
-        <p>
-          <a href='http://distance.bitpen.com'>
-            http://distance.bitpen.com
-          </a>
-        </p>
-      </div>
-      <div class='clear'></div>
-      <div class='box inline'>
-        <div class='highlight-box-title'>
-          <img src='./images/script_code.png' />
-          skeleton CSS
-          
-        </div>
-        <p>
-         A barebones, minimalistic foundation level CSS for new projects.
-        </p>
-        <p>
-          <a href='https://github.com/bitpen/skeletonCSS'>
-            https://github.com/bitpen/skeletonCSS
-          </a>
-        </p>
-         <p><strong>Documentation:</strong>
-          <a href='http://www.bitpen.com/skeletonCSS/index.html'>
-            http://www.bitpen.com/skeletonCSS/index.html
-          </a>
-        </p>
-      </div>
-    </div>
-    <footer>
-    </div>
-    
-      &#169; 2015. Bitpen Software
-    </footer>
-  </body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Portfolio for Jonathan Taylor">
+		<meta name="keywords" content="HTML,CSS,JavaScript, C#, .NET">
+		<meta name="author" content="Jonathan Taylor">
+		 <link rel='stylesheet' href='styles.css'>
+
+	</head>
+	<body>
+		<div id='header'>
+			<div id='branding'>
+				<a href='http://www.bitpen.com'>Bitpen</a>
+			</div>
+			<div id='headernav'>
+				<div>
+					<a href='http://www.github.com/bitpen/' title='My GitHub Repositories'><img src='GitHub_Logo.png' height='20px'/></a>
+				</div>
+				<div>
+					<a href='http://www.bitpen.com/'>Portfolio</a>
+				</div>
+			</div>
+		</div>
+		<div id='container'>
+			<h2>Portfolio</h2>
+			<div class='row'>
+				<div class='col col4'>
+					<div class='box'>
+						<div class='highlight-box-title'>
+							Web Solutions
+						</div>
+						<div class='highlight-box-subtitle'>
+							<img src='map.png' /> Distance Mapper
+						</div>
+						<p>
+							Distance mapping utility for quickly mapping distances for running, walking or biking. Built on Google Maps API v.3
+						</p>
+						<p>
+							<strong>App: </strong> <a href='http://distance.bitpen.com'>distance.bitpen.com</a>
+						</p>
+					</div>
+				</div>
+				<div class='col col4'>
+					<div class='box'>
+						<div class='highlight-box-title'>
+							Libraries/Components
+						</div>
+						<div class='highlight-box-subtitle'>
+							<img src='map.png' /> skeletonCSS
+						</div>
+						<p>
+							A barebones, minimalistic foundation level CSS for new projects. Provides baseline styles for page layout, forms, tables, etc.
+						</p>
+						<p>
+							<strong>Code: </strong>
+							<a href='http://www.github.com/bitpen/skeletonCSS'>GitHub
+								<img src='GitHub-Mark-32px.png' width='16px' height='16px' />
+							</a>
+						</p>
+						<p>
+							<strong>Documentation: </strong><a href='http://www.bitpen.com/skeletonCSS'>www.bitpen.com/skeletonCSS</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='footer'>
+		</div>
+		<div id='subfooter'>
+			&copy; 2015
+		</div>
+	</body>
 </html>
